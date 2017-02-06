@@ -1,8 +1,8 @@
 (function(){
-  angular.module('SocialTree', ['ui.router']);
-    .config(function($statProvider){
+  angular.module('SocialTree', ['ui.router'])
+    .config(function($stateProvider){
 
-      $statProvider
+      $stateProvider
         .state('signup', {
           url: "/signup",
           templateUrl: "app/signup/signup.html",

@@ -4,9 +4,9 @@ var mongoose = require("mongoose");
 
 var app = express();
 
-var mongoose.connect('mongodb://localhost:27017/SocialTree');
+mongoose.connect('mongodb://localhost:27017/SocialTree');
 
-app.use('/app' express.static(__dirname, + "/app"));
+app.use('/app', express.static(__dirname, + "/app"));
 app.use('node_modules', express.static(__dirname + "/node_modules"));
 
 app.get('/', function(req, res){
